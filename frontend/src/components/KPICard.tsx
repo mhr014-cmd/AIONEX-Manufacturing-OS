@@ -1,30 +1,35 @@
-type Props = {
-  title: string
-  value: string
-  color?: string
+interface Props {
+  title: string;
+  value: string;
+  growth: string;
 }
 
 const KPICard = ({
   title,
   value,
-  color,
+  growth,
 }: Props) => {
   return (
     <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6">
 
-      <p className="text-slate-400 text-sm">
-        {title}
-      </p>
+      <div className="flex items-center justify-between mb-4">
 
-      <h2
-        className="text-4xl font-black mt-4"
-        style={{ color: color || 'white' }}
-      >
+        <h3 className="text-slate-400 text-lg">
+          {title}
+        </h3>
+
+        <span className="text-green-400 font-semibold">
+          {growth}
+        </span>
+
+      </div>
+
+      <div className="text-5xl font-bold text-white">
         {value}
-      </h2>
+      </div>
 
     </div>
-  )
-}
+  );
+};
 
-export default KPICard
+export default KPICard;
