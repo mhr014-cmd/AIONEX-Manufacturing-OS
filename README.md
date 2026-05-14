@@ -1,11 +1,13 @@
 # AIONEX Manufacturing OS
 
 ## Brief One Line Summary
+
 AIONEX Manufacturing OS is a modern AI-powered Manufacturing ERP platform designed to streamline production, inventory, shipment, analytics, and operational workflows for smart manufacturing enterprises.
 
 ---
 
 # Overview
+
 AIONEX Manufacturing OS is a next-generation ERP solution currently under active development. The platform is built to modernize manufacturing operations by integrating production management, inventory tracking, shipment workflows, analytics dashboards, and AI-driven operational intelligence into one centralized ecosystem.
 
 The system follows a modern full-stack architecture using:
@@ -34,6 +36,7 @@ AIONEX is being designed as a scalable smart manufacturing operating system capa
 ---
 
 # Problem Statement
+
 Traditional manufacturing management systems often suffer from:
 
 - Fragmented operational workflows
@@ -60,18 +63,19 @@ AIONEX Manufacturing OS addresses these challenges by building a unified, intell
 ---
 
 # Dataset
+
 Currently, the system uses operational ERP data stored inside PostgreSQL.
 
 Primary data entities include:
 
-| Module | Description |
-|---|---|
-| Production | Manufacturing orders, status, quantities |
-| Inventory | Stock levels, inventory items |
-| Shipment | Shipment records and logistics tracking |
-| Users | Authentication and role management |
-| Notifications | ERP alerts and operational events |
-| AI Chat | AI assistant conversations |
+| Module        | Description                              |
+| ------------- | ---------------------------------------- |
+| Production    | Manufacturing orders, status, quantities |
+| Inventory     | Stock levels, inventory items            |
+| Shipment      | Shipment records and logistics tracking  |
+| Users         | Authentication and role management       |
+| Notifications | ERP alerts and operational events        |
+| AI Chat       | AI assistant conversations               |
 
 Future dataset expansion may include:
 
@@ -87,6 +91,7 @@ Future dataset expansion may include:
 # Tools and Technologies
 
 ## Frontend
+
 - React
 - TypeScript
 - Vite
@@ -95,6 +100,7 @@ Future dataset expansion may include:
 - Recharts (planned advanced analytics)
 
 ## Backend
+
 - FastAPI
 - Python
 - SQLAlchemy
@@ -103,14 +109,17 @@ Future dataset expansion may include:
 - Pydantic
 
 ## Database
+
 - PostgreSQL
 
 ## AI Integration
+
 - AI Copilot Architecture
 - Ollama Service
 - Future OpenAI Integration
 
 ## DevOps & Development
+
 - Git
 - GitHub
 - PyCharm
@@ -121,9 +130,11 @@ Future dataset expansion may include:
 ---
 
 # Methods
+
 The system follows a modular ERP architecture.
 
 ## Backend Architecture
+
 The backend uses FastAPI with modular route-based architecture.
 
 Key backend layers:
@@ -136,6 +147,7 @@ Key backend layers:
 - AI Services
 
 ## Frontend Architecture
+
 The frontend follows a component-driven React architecture.
 
 Key frontend layers:
@@ -148,6 +160,7 @@ Key frontend layers:
 - Authentication Store
 
 ## Database Design
+
 The system uses relational database modeling with PostgreSQL.
 
 Current core models:
@@ -160,9 +173,11 @@ Current core models:
 - AI Chat
 
 ## Authentication
+
 JWT authentication architecture is implemented with protected routes and role-based expansion planned.
 
 ## Analytics
+
 Dynamic KPI dashboards are implemented for operational visibility.
 
 Current analytics include:
@@ -175,6 +190,7 @@ Current analytics include:
 ---
 
 # Key Insights
+
 AIONEX Manufacturing OS demonstrates:
 
 - Scalable ERP architecture
@@ -192,6 +208,7 @@ The platform already establishes a strong foundation for becoming a fully intell
 # Dashboard / Model / Output
 
 ## Current Dashboard Features
+
 - Dynamic KPI Cards
 - Production Monitoring
 - Shipment Tracking
@@ -201,6 +218,7 @@ The platform already establishes a strong foundation for becoming a fully intell
 - Responsive Dashboard Layout
 
 ## AI Copilot
+
 Current AI functionality includes:
 
 - Rule-based ERP assistant
@@ -216,6 +234,7 @@ Future AI roadmap:
 - Smart ERP Q&A
 
 ## Analytics
+
 Current analytics are partially static and planned for database-driven upgrades.
 
 Future analytics roadmap:
@@ -231,6 +250,7 @@ Future analytics roadmap:
 # How to Run this Project?
 
 ## Prerequisites
+
 Install:
 
 - Python 3.10+
@@ -244,11 +264,13 @@ Install:
 ## Backend Setup
 
 ### Step 1 — Navigate to Backend
+
 ```bash
 cd backend
 ```
 
 ### Step 2 — Create Virtual Environment
+
 ```bash
 python -m venv .venv
 ```
@@ -256,21 +278,25 @@ python -m venv .venv
 ### Step 3 — Activate Virtual Environment
 
 #### Windows
+
 ```bash
 .venv\Scripts\activate
 ```
 
 #### Linux / Mac
+
 ```bash
 source .venv/bin/activate
 ```
 
 ### Step 4 — Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ### Step 5 — Configure Environment Variables
+
 Create `.env` file:
 
 ```env
@@ -281,16 +307,19 @@ ACCESS_TOKEN_EXPIRE_MINUTES=30
 ```
 
 ### Step 6 — Run Database Migrations
+
 ```bash
 alembic upgrade head
 ```
 
 ### Step 7 — Run Backend Server
+
 ```bash
 uvicorn app.main:app --reload
 ```
 
 Backend runs at:
+
 ```text
 http://127.0.0.1:8000
 ```
@@ -300,21 +329,25 @@ http://127.0.0.1:8000
 ## Frontend Setup
 
 ### Step 1 — Navigate to Frontend
+
 ```bash
 cd frontend
 ```
 
 ### Step 2 — Install Dependencies
+
 ```bash
 npm install
 ```
 
 ### Step 3 — Run Frontend
+
 ```bash
 npm run dev
 ```
 
 Frontend runs at:
+
 ```text
 http://localhost:5173
 ```
@@ -322,6 +355,7 @@ http://localhost:5173
 ---
 
 # Results & Conclusion
+
 AIONEX Manufacturing OS successfully demonstrates a modern ERP architecture for manufacturing enterprises.
 
 ## Achievements
@@ -337,6 +371,7 @@ AIONEX Manufacturing OS successfully demonstrates a modern ERP architecture for 
 - Modular scalable architecture
 
 ## Conclusion
+
 The project establishes a strong foundation for a fully intelligent smart manufacturing ERP platform.
 
 Its modular architecture allows future upgrades including:
@@ -357,6 +392,7 @@ AIONEX has significant potential for expansion into a production-ready Industry 
 ## PHASE 2 — SMART ERP FEATURES
 
 ### 1. Inventory Intelligence
+
 Planned features:
 
 - Auto low stock alerts
@@ -369,6 +405,7 @@ Planned features:
 ---
 
 ### 2. Notification Center
+
 Planned features:
 
 - Low stock alerts
@@ -380,6 +417,7 @@ Planned features:
 ---
 
 ### 3. Real Database Charts
+
 Planned upgrades:
 
 - Production trends
@@ -392,6 +430,7 @@ Planned upgrades:
 ---
 
 ### 4. AI Copilot Upgrade
+
 Future AI capabilities:
 
 - OpenAI integration
@@ -403,6 +442,7 @@ Future AI capabilities:
 ---
 
 ### 5. Authentication & Roles
+
 Planned roles:
 
 - Admin
@@ -415,6 +455,7 @@ JWT-protected role-based authorization will be expanded.
 ---
 
 ### 6. ERP Workflow Automation
+
 Planned automation workflows:
 
 - Production order auto-reserves inventory
@@ -425,6 +466,7 @@ Planned automation workflows:
 ---
 
 ### 7. Export System
+
 Planned exports:
 
 - PDF reports
@@ -435,6 +477,7 @@ Planned exports:
 ---
 
 ### 8. Modern Enterprise UI
+
 Planned UI upgrades:
 
 - Collapsible sidebar
@@ -554,9 +597,11 @@ AIONEX_Stage1_Part1_PyCharm/
 # 1. Introduction
 
 ## 1.1 Purpose
+
 The purpose of AIONEX Manufacturing OS is to provide a centralized ERP platform for managing manufacturing operations including production, inventory, shipment, analytics, and AI-assisted workflows.
 
 ## 1.2 Scope
+
 The system is intended for manufacturing companies seeking digital transformation through smart ERP systems.
 
 ## 1.3 Objectives
@@ -572,33 +617,39 @@ The system is intended for manufacturing companies seeking digital transformatio
 # 2. Functional Requirements
 
 ## Authentication Module
+
 - User login
 - JWT authentication
 - Protected routes
 - Role-based access control (future)
 
 ## Production Module
+
 - Create production orders
 - Track production status
 - Monitor production metrics
 
 ## Inventory Module
+
 - Add inventory items
 - Update stock levels
 - Inventory analytics
 - Low stock tracking (future)
 
 ## Shipment Module
+
 - Manage shipment records
 - Shipment tracking
 - Shipment analytics
 
 ## AI Copilot Module
+
 - ERP assistance
 - AI operational support
 - Future predictive intelligence
 
 ## Dashboard Module
+
 - KPI visualization
 - Analytics charts
 - Operational monitoring
@@ -608,21 +659,25 @@ The system is intended for manufacturing companies seeking digital transformatio
 # 3. Non-Functional Requirements
 
 ## Performance
+
 - Fast API responses
 - Responsive frontend UI
 - Scalable architecture
 
 ## Security
+
 - JWT authentication
 - Protected endpoints
 - Secure database access
 
 ## Scalability
+
 - Modular backend design
 - Expandable database schema
 - Cloud deployment readiness
 
 ## Usability
+
 - Enterprise-grade UI
 - Easy navigation
 - Responsive dashboard design
@@ -632,15 +687,19 @@ The system is intended for manufacturing companies seeking digital transformatio
 # 4. System Architecture
 
 ## Frontend
+
 React + TypeScript + TailwindCSS
 
 ## Backend
+
 FastAPI + Python
 
 ## Database
+
 PostgreSQL
 
 ## AI Layer
+
 Ollama / Future OpenAI Integration
 
 ---
@@ -660,12 +719,15 @@ Ollama / Future OpenAI Integration
 # Author & Contact
 
 ## Author
+
 AIONEX Manufacturing OS Development Team
 
 ## Contact
+
 For collaboration, contributions, or enterprise discussions:
 
-- GitHub Repository: Add repository link here
-- Email: Add contact email here
-- LinkedIn: Add professional profile here
+- GitHub Repository: [AIONEX Manufacturing OS](https://github.com/mhr014-cmd/AIONEX-Manufacturing-OS)
 
+- Email: [mhr014@gmail.com](mailto:mhr014@gmail.com)
+
+- LinkedIn: [Mahabbat RH](https://www.linkedin.com/in/mahabbatrh/)
